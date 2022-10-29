@@ -5,7 +5,11 @@ function TodoList() {
   const [todos, setTodos] = useState([]);
 
   const addTodo = todo => {
-    
+    if(!todo.text || /^\s*$/.test(todo.text)) {
+      return;
+    }
+
+    const newTodos = [todos, ...todos];
   }
   return (
     <div>
