@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 function TodoForm() {
-    con 
+    const [input, setInput] = useState('')
   return (
     <forn className="todo-form">
         <input 
