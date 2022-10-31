@@ -10,11 +10,14 @@ function TodoList() {
     }
 
     const newTodos = [todos, ...todos];
-  }
+
+    setTodos(newTodos);
+  };
+
   return (
     <div>
       <h1>What's the plan for today</h1>
-      <TodoForm />
+      <TodoForm onSubmit={addTodo}/>
     </div>
   )
 }
