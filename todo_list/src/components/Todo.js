@@ -7,7 +7,15 @@ function Todo({ todos, completeTodo, removeTodo }) {
   const [edit, setEdit] = useState({
     id: null,
     value: ''
-  })
+  });
+
+  const submitUpdate = value => {
+    updateTodo(edit.id, value);
+    setEdit({
+      id: null,
+      value: ''
+    })
+  }
 
   return todos.map((todo, index) => (
     <div className={todo.isComplete ? 'todo-row complete' :
