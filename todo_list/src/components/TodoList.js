@@ -16,7 +16,9 @@ function TodoList() {
   };
 
   const completeTodo = id => {
-    let updatedTR
+    let updatedTodos = todos.map(todo => {
+      if(todo. === id)
+    })
   }
 
   return (
