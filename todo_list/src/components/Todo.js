@@ -14,7 +14,11 @@ function Todo({ todos, completeTodo, removeTodo }) {
     setEdit({
       id: null,
       value: ''
-    })
+    });
+  };
+
+  if (edit.id) {
+    return <TodoForm edit={edit} onSubmit={submitUpdate} />
   }
 
   return todos.map((todo, index) => (
