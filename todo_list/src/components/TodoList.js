@@ -21,8 +21,9 @@ function TodoList() {
         todo.isComplete = !todo.isComplete
       }
       return todo
-    })
-  }
+    });
+    setTodos(updatedTodos);
+  };
 
   return (
     <div>
