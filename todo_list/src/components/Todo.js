@@ -11,8 +11,12 @@ function Todo() {
     <div className={todo.isComplete ? 'todo-row complete' :
      'todo-row'} key={index}>
 
+      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+        {todo.text }
+      </div>
+
      </div>
   ))
 }
 
-export default Todo
+export default Todo;
