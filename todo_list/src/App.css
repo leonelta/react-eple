@@ -51,3 +51,23 @@ h1{
     background: transparent;
     color: #fff;
 }
+
+.todo-input::placeholder{
+    color: #e2e2e2;
+}
+
+.todo-button{
+    padding: 16px;
+    border-radius: 0  4px 4px 0;
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        90deg,
+        rgba(93,12,255,1) 0%,
+        rgba(155,0,250,1) 100%
+    );
+    color: #fff;
+    text-transform: capitalize;
+
+}
+
