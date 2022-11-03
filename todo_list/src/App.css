@@ -136,4 +136,9 @@ h1{
     cursor: pointer;
 }
 
+.delete-icon{
+    margin-right: 5px;
+    color: #fff;
+}
+
 
